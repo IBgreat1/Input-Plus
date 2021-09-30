@@ -1,6 +1,5 @@
 local sequence = {}
 local utils = require(script.Parent.Utils)
-local Settings = require(script.Parent.Settings)
 local ActiveSequences = {}
 
 local SequenceTable = {
@@ -61,11 +60,11 @@ sequence.new = function(Delay,...) -- Delay between each key - set to nil for no
 	
 	local End = Instance.new('BindableEvent')
 	End.Name = 'Sequence'..Name..'End'
-	End.Parent = Settings.BindableStorage
+	End.Parent = game.ReplicatedStorage.EventStorage
 	
 	local Pressed = Instance.new('BindableEvent')
 	Pressed.Name = 'Sequence'..Name..'Pressed'
-	Pressed.Parent = Settings.BindableStorage
+	Pressed.Parent = game.ReplicatedStorage.EventStorage
 	
 	table.insert(ActiveSequences,{
 		Delay = Delay,
