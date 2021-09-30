@@ -7,7 +7,7 @@ Have you ever wanted to handle sequential inputs such as combos for double jumpi
 # Features
 <details>
   <summary>Sequence</summary>
-  - Sequences with delay specified (if delay is nil, no delay is included)<br>
+  - A sequence of keybinds with delay specified (if delay is nil, no delay is included)<br>
   - Any amount of keybinds can be put in the sequence.<br>
   - Events to indicate starting of sequence,ending of sequence and pressing of keybinds<br>
   - Feature to cancel the current input or reset the sequence.(Commonly used when gameProcessedEvent is true)<br>
