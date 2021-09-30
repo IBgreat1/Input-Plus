@@ -21,6 +21,7 @@ Have you ever wanted to handle sequential inputs such as combos for double jumpi
 </details>
 
 Get the module here : [Input plus+](https://www.roblox.com/library/7599649831/Input-Plus)<br>
+Thanks to my friend [Legedy](https://www.roblox.com/users/1366383020/profile) for the "TypeDefinitions" module<br>
 
 # API
 Main :
@@ -52,6 +53,6 @@ Main :
       - Input : The current key pressed<br>
       - gameProcessedEvent : The curret state of gameProcessedEvent <br>
       
-Thanks to my friend [Legedy](https://www.roblox.com/users/1366383020/profile) for the "TypeDefinitions" module
+
 
 
