@@ -20,7 +20,7 @@ Have you ever wanted to handle sequential inputs such as combos for double jumpi
   3) Feature to cancel the current input.(Commonly used when gameProcessedEvent is true)<br>
 </details>
 
-Get the module here : [Input plus+](https://www.roblox.com/library/7599649831/Input-Plus)
+Get the module here : [Input plus+](https://www.roblox.com/library/7599649831/Input-Plus)<br>
 Thanks to my friend [Legedy](https://www.roblox.com/users/1366383020/profile) for the "TypeDefinitions" module
 
 
