@@ -35,9 +35,9 @@ Main :
       Start - BindableEvent indicating the starting of sequence<br>
       End - BindableEvent indicating the ending of sequence<br>
       Pressed - BindableEvent indicating the pressing of keybinds in the sequence, passes pressed : (Input,gameProcessedEvent,Index) :<br>
-        Input : The current key pressed<br>
-        gameProcessedEvent : The curret state of gameProcessedEvent <br>
-        Index : The current Index the sequence is at, could use for combos to indicate the combo index.<br><br>
+      ->Input : The current key pressed<br>
+      ->gameProcessedEvent : The curret state of gameProcessedEvent <br>
+      ->Index : The current Index the sequence is at, could use for combos to indicate the combo index.<br><br>
       Destroy - Function : To destroy the sequence and cleaning everything related to it<br>
       Cancel - Function : To cancel the current input pressed check examples for more details on use case.<br>
       Reset - Function : To reset the entire sequence<br>
