@@ -25,7 +25,7 @@ end
 Player.CharacterAdded:Connect(Setup)
 
 Return.Pressed:Connect(function(inp,gp,index)
-    if gp then
+    if gp then -- If gameProcessedEvent is true cancel the input 
         Return:Cancel()
     else
         if Character and Humanoid then
@@ -35,6 +35,6 @@ Return.Pressed:Connect(function(inp,gp,index)
 end)
 
 Return.End:Connect(function()
-    Return:Toggle(false)
+    Return:Toggle(false) -- Disable the keybind until the player is jumping again.
     Jumped = true
 end)
