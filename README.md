@@ -34,16 +34,24 @@ Main :
     Returns : <br><br>
       Start - BindableEvent indicating the starting of sequence<br>
       End - BindableEvent indicating the ending of sequence<br>
-      Pressed - BindableEvent indicating the pressing of keybinds in the sequence, passes pressed : (Input,gameProcessedEvent,Index) :<br>
+      Pressed - BindableEvent indicating the pressing of keybinds in the sequence, passes arguments : (Input,gameProcessedEvent,Index) :<br>
       ->Input : The current key pressed<br>
       ->gameProcessedEvent : The curret state of gameProcessedEvent <br>
       ->Index : The current Index the sequence is at, could use for combos to indicate the combo index.<br><br>
       Destroy - Function : To destroy the sequence and cleaning everything related to it<br>
       Cancel - Function : To cancel the current input pressed check examples for more details on use case.<br>
-      Reset - Function : To reset the entire sequence<br>
+      Reset - Function : To reset the entire sequence<br><br>
       
-  
-  
+  Hold.new(Keys) : <br>
+    Arguments : <br>
+        Keys are the list of all the keys involved in the sequence.<br><br>
+    Returns : <br><br>
+      Start - BindableEvent indicating the starting of holding<br>
+      End - BindableEvent indicating the ending of holding (**Note : this event passes gameProcessedEvent if there is only one key to prevent**)<br>
+      Hold - BindableEvent indicating the current key held, passes arguments : (Input,gameProcessedEvent) :<br>
+      ->Input : The current key pressed<br>
+      ->gameProcessedEvent : The curret state of gameProcessedEvent <br>
+      
 Thanks to my friend [Legedy](https://www.roblox.com/users/1366383020/profile) for the "TypeDefinitions" module
 
 
