@@ -30,8 +30,8 @@ Main :
   Sequence.new(Delay,keys) :<br>
     Arguments : <br>
       Delay is the maximum delay between each keybind triggering,if the delta time exceeds delay the sequence will reset.<br>
-      Keys are the list of all the keys in **order** involved in the sequence.<br>
-    Returns : <br>
+      Keys are the list of all the keys in **order** involved in the sequence.<br><br>
+    Returns : <br><br>
       Start - BindableEvent indicating the starting of sequence<br>
       End - BindableEvent indicating the ending of sequence<br>
       Pressed - BindableEvent indicating the pressing of keybinds in the sequence, passes pressed : (Input,gameProcessedEvent,Index) :<br>
