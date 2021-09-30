@@ -28,7 +28,7 @@ Main :
   Sequence - A module inside the Input module controlling the sequences.<br>
   Hold - A module insdie the Hold module controlling the holding inputs.<br>
   
-  - Sequence.new(Delay,keys) :<br>
+  * Sequence.new(Delay,keys) :<br>
     - Arguments : <br>
       - Delay is the maximum delay between each keybind triggering,if the delta time exceeds delay the sequence will reset.<br>
       - Keys are the list of all the keys in **order** involved in the sequence.<br><br>
@@ -43,7 +43,7 @@ Main :
       - Cancel - Function : To cancel the current input pressed check examples for more details on use case.<br>
       - Reset - Function : To reset the entire sequence<br><br>
       
-  - Hold.new(Keys) : <br>
+  * Hold.new(Keys) : <br>
     - Arguments : <br>
         - Keys are the list of all the keys involved in the sequence.<br>
     - Returns : <br>
