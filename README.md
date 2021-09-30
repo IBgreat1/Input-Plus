@@ -32,7 +32,7 @@ Main :
     - Arguments : <br>
       - Delay is the maximum delay between each keybind triggering,if the delta time exceeds delay the sequence will reset.<br>
       - Keys are the list of all the keys in **order** involved in the sequence.<br><br>
-    - Returns : <br>
+    - Returns a dictionary with: <br>
       - Start - BindableEvent indicating the starting of sequence<br>
       - End - BindableEvent indicating the ending of sequence<br>
       - Pressed - BindableEvent indicating the pressing of keybinds in the sequence, passes arguments : (Input,gameProcessedEvent,Index) :<br>
@@ -46,7 +46,7 @@ Main :
   * Hold.new(Keys) : <br>
     - Arguments : <br>
         - Keys are the list of all the keys involved in the sequence.<br>
-    - Returns : <br>
+    - Returns a dictionary with: <br>
       - Start - BindableEvent indicating the starting of holding<br>
       - End - BindableEvent indicating the ending of holding (**Note : this event passes gameProcessedEvent if there is only one key to prevent**)<br>
       - Hold - BindableEvent indicating the current key held, passes arguments : (Input,gameProcessedEvent) :<br>
