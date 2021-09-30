@@ -1,7 +1,6 @@
 local hold = {}
 local ActiveHolds = {}
 local utils = require(script.Parent.Utils)
-local Settings = require(script.Parent.Settings)
 
 local HoldTable = {
 	Destroy = function(self)
@@ -38,15 +37,15 @@ hold.new = function(...)
 
 	local Start = Instance.new('BindableEvent')
 	Start.Name = 'Hold'..Name..'Start'
-	Start.Parent = Settings.BindableStorage
+	Start.Parent = game.ReplicatedStorage.EventStorage
 
 	local End = Instance.new('BindableEvent')
 	End.Name = 'Hold'..Name..'End'
-	End.Parent = Settings.BindableStorage
+	End.Parent = game.ReplicatedStorage.EventStorage
 	
 	local Hold = Instance.new('BindableEvent')
 	Hold.Name = 'Hold'..Name..'Hold'
-	Hold.Parent = Settings.BindableStorage
+	Hold.Parent = game.ReplicatedStorage.EventStorage
 	
 	table.insert(ActiveHolds,{
 		Name = Name,
