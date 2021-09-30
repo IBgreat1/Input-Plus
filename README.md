@@ -24,8 +24,26 @@ Get the module here : [Input plus+](https://www.roblox.com/library/7599649831/In
 
 # API
 Main :
-  Sequence - A module inside the Input module controlling the sequences.
-  Hold - A module insdie the Hold module controlling the holding inputs.
+  Sequence - A module inside the Input module controlling the sequences.<br>
+  Hold - A module insdie the Hold module controlling the holding inputs.<br>
+  
+  Sequence.new(Delay,keys) :<br>
+    Arguments : <br>
+      Delay is the maximum delay between each keybind triggering,if the delta time exceeds delay the sequence will reset.<br>
+      Keys are the list of all the keys in **order** involved in the sequence.<br>
+    Returns : <br>
+      Start - BindableEvent indicating the starting of sequence<br>
+      End - BindableEvent indicating the ending of sequence<br>
+      Pressed - BindableEvent indicating the pressing of keybinds in the sequence, passes pressed : (Input,gameProcessedEvent,Index) :<br>
+        Input : The current key pressed<br>
+        gameProcessedEvent : The curret state of gameProcessedEvent <br>
+        Index : The current Index the sequence is at, could use for combos to indicate the combo index.<br>
+      Destroy - Function : To destroy the sequence and cleaning everything related to it
+      Cancel - Function : To cancel the current input pressed check examples for more details on use case.
+      Reset - Function : To reset the entire sequence
+      
+  
+  
 Thanks to my friend [Legedy](https://www.roblox.com/users/1366383020/profile) for the "TypeDefinitions" module
 
 
