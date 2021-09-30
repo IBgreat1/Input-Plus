@@ -4,6 +4,10 @@ type InputType = TypeDefinitions.Input;
 local Input : InputType = {}
 local Ignore = {'Settings','Utils', 'TypeDefinitions'}
 
+local Folder = Instance.new('Folder')
+Folder.Name = 'EventStorage'
+Folder.Parent = game.ReplicatedStorage
+
 local UIS = game:GetService('UserInputService')
 
 for _ , v in ipairs(script:GetChildren()) do
