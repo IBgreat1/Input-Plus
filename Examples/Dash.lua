@@ -13,7 +13,7 @@ end
 game.Players.LocalPlayer.CharacterAdded:Connect(Setup)
 
 Return.Pressed:Connect(function(inp,gp,index)
-    if gp then
+    if gp then -- If gameProcessedEvent is true cancel the input 
         Return:Cancel()
     elseif index == 2 and Character then
         Character.HumanoidRootPart.CFrame *= CFrame.new(0,0,-10)
@@ -21,5 +21,5 @@ Return.Pressed:Connect(function(inp,gp,index)
 end)
 
 Return.End:Connect(function()
-    Return:Toggle(false,2)
+    Return:Toggle(false,2) -- Disabling keybind for two seconds (a sort of cooldown)
 end)
