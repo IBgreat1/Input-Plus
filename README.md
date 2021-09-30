@@ -1,6 +1,7 @@
 # Input Plus+
 # What is Input plus?
-A Luau module for handling sequential input(s) easily and supporting holding input(s)
+![image](https://user-images.githubusercontent.com/70950932/135441575-08f8ff65-af73-48ab-8879-d9a83413bbb8.png)![image](https://user-images.githubusercontent.com/70950932/135441703-783c9ae0-040a-4cd5-9a18-3e153a339ebe.png)
+
 
 # Why Input plus?
 Have you ever wanted to handle sequential inputs such as combos for double jumping,dashing and weapons or holding inputs? Well, Input plus could help you with that with making your code clean and performant. Input plus is very easy to use and supports any amount of keybinds.
