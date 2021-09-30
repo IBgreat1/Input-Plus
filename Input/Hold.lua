@@ -15,9 +15,8 @@ local HoldTable = {
 	Cancel = function(self,input)
 		local Info = ActiveHolds[self.Index]
 		if Info then
-			local Index = table.find(Info.Keys,input)
-			if Index then
-				Info.Progress[Index] = nil
+			if Info.Progress then
+				table.remove(Info.Progress,1)
 			end
 		end
 	end,
@@ -83,7 +82,7 @@ hold.HookStart = function(Input,gp)
 				v.Hold:Fire(v.Keys[Index],gp)
 				if #v.Progress == #v.Keys and not v.Holding then
 					v.Holding = true
-					v.Start:Fire()
+					v.Start:Fire(#v.Keys == 1 and gp)
 				end
 			end
 		end
