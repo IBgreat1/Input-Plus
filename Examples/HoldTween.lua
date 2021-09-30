@@ -7,7 +7,7 @@ Part.Anchored = true
 Part.Parent = workspace
 
 
-Hold.Start:Connect(function(gp)
+Hold.Start:Connect(function(gp) -- Fires gp if the there is only single keybind to prevent confusion (this hasn't happened so far but checking for this would be good)
 	if gp then return end
 	print('Start')
 	Up = TWS:Create(Part,TweenInfo.new(3),{Size = Vector3.new(4,10,2),CFrame = Part.CFrame * CFrame.new(0,4.5,0)})
