@@ -23,7 +23,7 @@ end)
 
 Hold.Hold:Connect(function(Input,gp)
 	if gp then
-		Hold:Cancel(Input)
+		Hold:Cancel()
 	end
 end)
 
