@@ -1,3 +1,4 @@
+local Input = require(game.ReplicatedStorage.Input)
 local Hold = Input.Hold.new(Enum.UserInputType.MouseButton1,Enum.KeyCode.B) -- Hold mouse button1 and E
 
 Hold.Start:Connect(function()
