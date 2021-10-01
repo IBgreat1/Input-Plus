@@ -14,7 +14,7 @@ local HoldTable = {
 	Cancel = function(self,input)
 		local Info = ActiveHolds[self.Index]
 		if Info then
-			if Info.Progress then
+			if Info.Progress[1] then
 				table.remove(Info.Progress,1)
 			end
 		end
