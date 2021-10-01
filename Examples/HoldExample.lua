@@ -6,7 +6,7 @@ end)
 
 Hold.Hold:Connect(function(Input,gp)
     if gp then -- If gameProcessedEvent is true cancel the input 
-        Hold:Cancel(Input)
+        Hold:Cancel()
     end
 end)
 
