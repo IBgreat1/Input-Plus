@@ -22,4 +22,3 @@ Have you ever wanted to handle sequential inputs such as combos for double jumpi
 Documentation : https://ibgreat1.github.io/Input-Plus/ <br>
 Get the module here : [Input plus+](https://www.roblox.com/library/7599649831/Input-Plus)<br>
 Thanks to my friend [Legedy](https://www.roblox.com/users/1366383020/profile) for the "TypeDefinitions" module<br>
-thyanks to mrther for coming upw iwht the mane of the modue<br>
